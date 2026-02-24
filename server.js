@@ -1,41 +1,42 @@
 const express = require("express");
 const path = require("path");
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Middleware para parsear JSON
+// Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Servir archivos estáticos desde el directorio raíz
+// Servir archivos estáticos desde la raíz
 app.use(express.static(__dirname));
 
-// Ruta raíz - servir index.html
+// Ruta principal
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
 });
 
-// Ruta para la página de login
+// Ruta login
 app.get("/login", (req, res) => {
-  res.sendFile(path.join(__dirname, "views/loginUser.html"));
+  res.sendFile(path.join(__dirname, "views", "loginUser.html"));
 });
 
-// Ejemplo de API
+// API de prueba
 app.get("/api/test", (req, res) => {
-  res.json({ mensaje: "Backend funcionando 🚀" });
+  res.json({ mensaje: "Backend funcionando en Azure 🚀" });
 });
 
-// Manejo de rutas no encontradas (404)
+// 404
 app.use((req, res) => {
-  res.status(404).json({ error: "Ruta no encontrada" });
+  res.status(404).send("Ruta no encontrada");
 });
 
-// Manejo de errores
+// Errores
 app.use((err, req, res, next) => {
   console.error(err.stack);
-  res.status(500).json({ error: "Error interno del servidor" });
+  res.status(500).send("Error interno del servidor");
 });
 
-app.listen(PORT, () => {
-  console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Servidor corriendo en puerto ${PORT}`);
 });
