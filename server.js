@@ -13,7 +13,7 @@ app.use(express.static(__dirname));
 
 // Ruta principal
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "index.html"));
+  res.send("Funciona Azure 🚀");
 });
 
 // Ruta login
