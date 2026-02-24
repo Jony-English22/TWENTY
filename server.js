@@ -7,7 +7,7 @@ app.use(express.static("public"));
 
 // Opcional: servir index.html para la raíz
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/public/index.html");
+  res.sendFile(__dirname + "index.html");
 });
 
 // Ejemplo de API
