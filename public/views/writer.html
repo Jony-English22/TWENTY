@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-widt,initial-scale=1">
+        <title>Escritor - Twenty</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+   <body>
+    <header>
+        <div class="logo">
+                <span id="logoToggle">TWENTYCENTRAL</span>
+        </div>
+
+        <nav class="sidebar">
+            <a href="#">Dashboard</a>
+            <a href="#">Publicaciones</a>
+            <a href="#">Media Gallery</a>
+            <a href="#">Analytics</a>
+            <a href="#">Settings</a>
+        </nav>
+    </header>
+    <script>
+       const logo = document.getElementById("logoToggle");
+        const sidebar = document.querySelector(".sidebar");
+
+        logo.addEventListener("click", (e) => {
+            e.preventDefault(); // Evita que el link redirija
+            sidebar.classList.toggle("active");
+        }); 
+    </script>
+   </body>
+</html>
