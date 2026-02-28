@@ -2,32 +2,150 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-widt,initial-scale=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Escritor - Twenty</title>
         <link rel="stylesheet" href="../css/style.css">
     </head>
    <body>
     <header>
-        <div class="logo">
-                <span id="logoToggle">TWENTYCENTRAL</span>
+        <div class="header-container">
+            <div class="logo">
+                    <span id="logoToggle">TWENTYCENTRAL</span>
+            </div>
+            <nav class="sidebar">
+                <a href="#">Dashboard</a>
+                <a href="#">Publicaciones</a>
+                <a href="#">Media Gallery</a>
+                <a href="#">Analytics</a>
+                <a href="#">Settings</a>
+            </nav>
+            <div class="user-card">
+                <div class="avatar"><img src="" alt="Foto de perfil"></div>
+                <div class="user-info">
+                    <span class="name">Alex Morgan</span>
+                    <span class="role">Senior Writer</span>       
+                </div>
+            </div>
         </div>
-
-        <nav class="sidebar">
-            <a href="#">Dashboard</a>
-            <a href="#">Publicaciones</a>
-            <a href="#">Media Gallery</a>
-            <a href="#">Analytics</a>
-            <a href="#">Settings</a>
-        </nav>
     </header>
-    <script>
-       const logo = document.getElementById("logoToggle");
-        const sidebar = document.querySelector(".sidebar");
+    <main>
+        <div>
+            <img src="" alt="Imagen de bienvenida">
+            <div>
+                <div><h4>NEW RECRUNT</h4></div>
+                <h1>Welcome to the Team, Alex!</h1>
+                <p>Ready to break the next big story? Your dashboard is set up and waiting. Let´s get you into the game.</p>
+            </div>
+        </div>
+        <section class="quick-start">
+            <h3 class="section-title">
+                <span class="line">QUICK START</span>
+            </h3>
+            <div class="cards">
+                <div class="card">
+                    <div class="icon red">+</div>
+                    <h4>Create New Draft</h4>
+                    <p>Start writing your next big feature or match report from scratch.</p>
+                    <a href="#" class="link red-text">Start Writing →</a>
+                </div>
 
-        logo.addEventListener("click", (e) => {
-            e.preventDefault(); // Evita que el link redirija
-            sidebar.classList.toggle("active");
-        }); 
-    </script>
+                <div class="card">
+                    <div class="icon-blue">[]</div>
+                    <h4>Browse Media</h4>
+                    <p>Find high-res photos and video clips for you articles.</p>
+                    <a href="#" class="link blue-text">Explore Gallery →</a>
+                </div>
+            </div>
+        </section>
+        <section class="live-updates">
+            <header class="header">
+                <span class="red-bar"></span>
+                <h3 class="section-title">YOUR BEAT: LIVE UPDATES</h3>
+                <a href="#" class="link red-text">View All Matches</a>
+            </header>
+            <div class="match-card">
+                <div class="status live">LIVE • Q4</div>
+                <div class="league">NBA Regular Season</div>
+                <div class="teams">
+                    <div class="team">
+                        <span class="team-name">LAL</span>
+                        <span class="team-score">108</span>
+                    </div>
+                    <div class="vs">vs</div>
+                    <div class="team">
+                        <span class="team-name">GSW</span>
+                        <span class="team-score">96</span>
+                    </div>
+                </div>
+                <button class="btn">Draft Report</button>
+            </div>
+
+            <div class="match-card">
+                <div class="status final">FINAL</div>
+                <div class="league">La Liga</div>
+                <div class="teams">
+                    <div class="team">
+                        <span class="team-name">RMA</span>
+                        <span class="team-score">3</span>
+                    </div>
+                    <div class="vs">vs</div>
+                    <div class="team">
+                        <span class="team-name">FCB</span>
+                        <span class="team-score">1</span>
+                    </div>
+                </div>
+                <button class="btn">View Stats</button>
+            </div>
+        </section>
+        <section class="onboarding-card" aria-labelledby="onboarding-title">
+            <header class="header">
+                <h3 id="onboarding-title">ONBOARDING PROGRESS</h3>
+                <p>Complete these steps to get verified.</p>
+                <div class="progress-info">
+                    <span>60% Complete</span>
+                    <span>Step 3 of 5</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 60%;"></div>
+                </div>
+            </header>
+            
+            <div class="steps-container">
+                <ul class="steps-list">
+                    <li class="step completed">
+                        <span class="icon-check">✓</span>
+                        <span class="step-label">Account Registration</span>
+                    </li>
+                    <li class="step completed">
+                        <span class="icon-check">✓</span>
+                        <span class="step-label">Complete Bio & Beats</span>
+                    </li>
+                    <li class="step active">
+                        <span class="icon-circle"></span>
+                        <div class="step-header">
+                            <div class="step-text">
+                                <strong>Upload Profile Photo</strong>
+                                <small>Requiered for press credentials.</small>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-upload">Upload Now</button>
+                    </li>   
+                    <li class="step pending">
+                        <span class="icon-circle"></span>
+                        <span class="step-label">Setup Notifications</span>
+                    </li>   
+                    <li class="step pending">
+                        <span class="icon-circle"></span>
+                        <span class="step-label">First Article Submission</span>
+                    </li>              
+                </ul>
+            </div>
+            <footer class="footer">
+               <a href="#help" title="Get help with onboarding">
+                <span class="help-icon">?</span> Need help getting started?
+                </a>
+            </footer>
+        </section>
+    </main>
    </body>
 </html>
