@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Twenty</title>
+    </head>
+    <body>
+        <main class="split-layout">
+            <section class="img-side">
+                <div class="img-content">
+                    <h1>Join the<span>Actions</span></h1>
+                    <p>Get personalized news, live scores, and exclusive insights...</p>
+                    <ul class="features">
+                        <li>Personalized Feed</li>
+                        <li>Live Updates</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="form-side">
+                <header class="form-header">
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </header>
+
+                <div class="form-container">
+                    <span class="step-indicator">STEP 1 OF 2</span>
+                    <h2>Create your account</h2>
+                    <p class="step-next">Next: Preferences</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 50%;"></div>
+                    </div>
+
+                    <form action="" method="POST">
+                        <div class="input-group">
+                            <div class="input-name">
+                                <div class="field-wrapper is-half">
+                                    <label for="first-name">First Name</label>
+                                    <input type="text" id="first-name" placeholder="e.g. Jordan">
+                                </div>
+                                <div class="field-wrapper is-half">
+                                    <label for="last-name">Last Name</label>
+                                    <input type="text" id="last-name" placeholder="e.g. Smith">
+                                </div>
+                            </div>
+                            <div class="field-wrapper">
+                                <label for="email">Email Addres</label>
+                                <input type="text" id="email" placeholder="name@example.com">
+                            </div>
+                            <div class="field-wrapper">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" placeholder="Create a password" aria-describedby="password-hint">
+                                <small id="password-hint" class="helper-text">Must be at least 8 characers.</small>
+                        
+                            </div>
+                        </div>
+                        <fieldset>
+                            <legend>Selec your favorites</legend>
+                            <div class="fieldset-content">
+                                <div class="fieldset-header">
+                                    <span class="step-preview">Step 2 Preview</span>
+                                </div>
+                                <div class="sports-grid">
+                                    <label class="sport-card">
+                                        <input type="checkbox" name="favorites" value="soccer">
+                                        <span class="icon" aria-hidden="true">⚽</span>
+                                        <strong class="sport-name">Soccer</strong>
+                                    </label>
+                                    <label class="sport-card">
+                                        <input type="checkbox" name="favorites" value="basketball">
+                                        <span class="icon" aria-hidden="true">🏀</span>
+                                        <strong class="sport-name">Basketball</strong>
+                                    </label>
+                                    <label class="sport-card">
+                                        <input type="checkbox" name="favorites" value="tennis">
+                                        <span class="icon" aria-hidden="true">🎾</span>
+                                        <strong class="sport-name">Tennis</strong>
+                                    </label>
+                                    <label class="sport-card">
+                                        <input type="checkbox" name="favorites" value="football">
+                                        <span class="icon" aria-hidden="true">🏈</span>
+                                        <strong class="sport-name">Football</strong>
+                                    </label>
+                                    <label class="sport-card">
+                                        <input type="checkbox" name="favorites" value="racing">
+                                        <span class="icon" aria-hidden="true">🏎️</span>
+                                        <strong class="sport-name">Racing</strong>
+                                    </label>
+                                    <label class="sport-card">
+                                        <input type="checkbox" name="favorites" value="baseball">
+                                        <span class="icon" aria-hidden="true">⚾</span>
+                                        <strong class="sport-name">Baseball</strong>
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <button type="submit" class="btn-primary">Continue →</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
