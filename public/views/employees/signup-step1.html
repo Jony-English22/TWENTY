@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Twenty</title>
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="container">
+            <div class="logo">
+                <span id="logoToggle"><a href="../../index.html">TWENTYCENTRAL</a></span>
+            </div>
+            <p>Already have an account? <a href="../login.html">Log in</a></p>
+        </div>
+    </header>
+    <main>
+        <div class="stepper-container">
+            <div class="labels">
+                <span class="active">Account Creation</span>
+                <span>Profile Setup</span>
+                <span>Tema Assignment</span>
+            </div>
+            <diV class="progress-bar">
+                <div class="progress-fill"></div>
+            </diV>
+            <p class="step-text">STEP 1 OF 3</p>
+        </div>
+        <section class="registration-form-container">
+            <h2>Create you Staff Account</h2>
+            <p>Enter your official credentials to access the internal portal.</p>
+
+            <form>
+                <div class="input-group">
+                    <label for="email">Official Email Address</label>
+                    <input type="email" id="email" placeholder="john.doe@twentycentral.com">
+                    <small>Please use your oganization assigend email.</small>
+                </div>
+
+                <div class="input-group">
+                    <label for="staff-id">Staff ID</label>
+                    <input type="text" id="staff-id" placeholder="TS-23300879">
+                </div>
+
+                <div class="password-row">
+                    <div class="input-group">
+                        <label for="pass">Password</label>
+                        <input type="password" id="pass">
+                    </div>
+                    <div class="input-group">
+                        <label for="confirm-pass">Confirm Password</label>
+                        <input type="password" id="confirm-pass">
+                    </div>
+                </div>
+
+                <div class="terms">
+                    <input type="checkbox" id="terms">
+                    <label for="terms">I agree to the Internal Data Policy and NDA Terms.</label>
+                </div>
+
+                <button type="submit" class="btn-primary">
+                    Continue to Profile Setup
+                </button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

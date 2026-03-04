@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Twenty</title>
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="container">
+            <div class="logo">
+                <span id="logoToggle"><a href="../../index.html">TWENTYCENTRAL</a></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="stepper-container">
+            <div class="labels">
+                <span class="active">Account Creation</span>
+                <span>Profile Setup</span>
+                <span>Tema Assignment</span>
+            </div>
+            <diV class="progress-bar">
+                <div class="progress-fill"></div>
+            </diV>
+            <p class="step-text">STEP 2 OF 3</p>
+        </div>
+        <section class="portal-setup">
+            <h2>Staff Portal Setup</h2>
+            <p>Pleasse verify your credentials and complete your public profile used for bylines.</p>
+
+            <form action="/update-profile" method="POST" enctype="multipart/form-data">
+                <div class="profile-grid">
+
+                    <div class="photo-upload-container"></div>
+                    <h3>Profile Headshot</h3>
+                    <div class="upload-box">
+                        <input type="file" id="headshot" name="headshot" accept="image/*" hidden>
+                        <label for="headshot">
+                            <img src="icon-upload.png" alt="Upload">
+                            <span>Upload Headshot</span>
+                            <small>JPG, PNG, MAX 2MB</small>
+                        </label>
+                        <div class="warning-box">
+                            <p>This photo will appear next to your published articles...</p>
+                        </div>
+                    </div>
+
+                    <div class="profile-details">
+                        <div class="input-row">
+                            <div class="field">
+                                <label>Staff ID</label>
+                                <input type="text" value="TS-23300879" disabled>
+                            </div>
+                            <div class="field">
+                                <label>Full Name</label>
+                                <input type="text" placeholder="First Last">
+                            </div>
+                            <div class="field">
+                                <label>Primary Role</label>
+                                <select id="roles" name="roles">
+                                    <option value="" disabled selected>Select your role...</option>
+                                    <option value="dev">Developer</option>
+                                    <option value="design">Designer</option>
+                                    <option value="pm">Product Manager</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label>Professional Bio</label>
+                            <textarea placeholder="Briefly describe your background..."></textarea>
+                            <span class="char-count">0/300 characters</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn-link">Save Draft</button>
+                    <button type="submit" class="btn-danger">Complete Profile</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
