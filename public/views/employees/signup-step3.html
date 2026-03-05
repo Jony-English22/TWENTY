@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta chrset="utf-8">
+    <meta name="vierport" content="width=device-width, initial-scale=1">
+    <title>Twenty</title>
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="container">
+            <div class="logo">
+                <span id="logoToggle"><a href="../../index.html">TWENTYCENTRAL</a></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="stepper-container">
+            <div class="labels">
+                <span class="active">Account Creation</span>
+                <span>Profile Setup</span>
+                <span>Team Assignment</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-bar"></div>
+            </div>
+            <p class="step-text">STEP 3 OF 3</p>
+        </div>
+        <section class="assign-covarage-teams">
+            <h2>Assign Coverage Teams</h2>
+            <p>Select the sport departments and specific teams the new staff member will cover.</p>
+            
+            <div class="department-sport">
+                <span class="title-secundary">Primary Sport Department</span>
+                <label class="sport-card">
+                    <input type="checkbox" name="department" value="soccer">
+                    <span class="icon" aria-hidden="true">⚽</span>
+                    <strong class="sport-name">Soccer</strong>
+                </label>
+                <label class="sport-card">
+                    <input type="checkbox" name="department" value="basketball">
+                    <span class="icon" aria-hidden="true">🏀</span>
+                    <strong class="sport-name">Basketball</strong>
+                </label>
+                <label class="sport-card">
+                    <input type="checkbox" name="department" value="nfl">
+                    <span class="icon" aria-hidden="true">🏈</span>
+                    <strong class="sport-name">NFL</strong>
+                </label>
+                <label class="sport-card">
+                    <input type="checkbox" name="department" value="mlb">
+                    <span class="icon" aria-hidden="true">⚾</span>
+                    <strong class="sport-name">MLB</strong>
+                </label>
+            </div>
+            <div class="team-selector-container">
+                <div class="selector-header">
+                    <h3>Assign Specific Teams</h3>
+                    <search>
+                        <form role="search">
+                            <input type="search" placeholder="Search leagues or teams...">
+                        </form>
+                    </search>
+                </div>
+
+                <div class="leagues-wrapper">
+                    <section class="league">
+                        <h4><span class="dot red"></span> LA LIGA (SPAIN)</h4>
+                        <div class="teams-grid"> 
+                            <label class="team-card">
+                                <input type="checkbox" name="team" value="real-madrid">
+                                <span class="custom-check">Real Madrid</span> 
+                            </label>
+                            <label class="team-card">
+                                <input type="checkbox" name="team" value="barcelona">
+                                <span class="custom-check">FC Barcelona</span>
+                            </label>
+                            <label class="team-card">
+                                <input type="checkbox" name="team" value="barcelona">
+                                <span class="custom-check">FC Barcelona</span>
+                            </label>
+                            <label class="team-card">
+                                <input type="checkbox" name="team" value="atletico">
+                                <span class="custom-check">Atlético Madrid</span>
+                            </label>
+                            <label class="team-card">
+                                <input type="checkbox" name="team" value="valencia">
+                                <span class="custom-check">Valecia CF</span>
+                            </label>
+                            <label class="team-card">
+                                <input type="checkbox" name="team" value="sevilla">
+                                <span class="custom-check">Sevilla FC</span>
+                            </label>
+                        </div>
+                    </section>
+                    <section class="league">
+                        <h4><span class="dot red"></span> PREMIER LEAGUE (UK)</h4>
+                        <div class="teams-grid">
+                            <label class="team-card">
+                                <input type="checkbox" name="team" value="city">
+                                <span class="custom-check">Manchester City</span> 
+                            </label>
+                            <label class="team-card">
+                                <input type="checkbox" name="team" value="arsenal">
+                                <span class="custom-check">Arsenal</span>
+                            </label>
+                            <label class="team-card">
+                                <input type="checkbox" name="team" value="liverpool">
+                                <span class="custom-check">Liverpool</span>
+                            </label>
+                        </div>
+                    </section>
+                </div>
+            </div> 
+            
+            <div class="">
+                <div class="editorial">
+                    <span>Editorial Role</span>
+                    <select id="edi-role">
+                        <option>Lead Writer</option>
+                        <option>Multimedia</option>
+                        <option>Jefe de Departamento</option>
+                    </select>
+                    <small>Determines access level to the CMS.</small>
+                </div>
+                <div class="notif">
+                    <span>Notification Setting</span>
+                    <label>
+                        <input type="checkbox" name="alert" value="match-alerts">
+                        <span class="custom-check">Match Alerts</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="alert" value="daily-digest">
+                        <span class="custom-check">Daily Digest</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-link"><a hfer="signup-step2.html">Back to Profile</a></button>
+                <button type="submit" class="btn-danger">Complete Registration</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
